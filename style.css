@@ -5,7 +5,7 @@ flex-direction: column;
 margin: 0;
 }
 
-.header, .awesome{
+.header, .awesome, .info, .albums, .quotebox, .calltoactionbox{
 padding:16px 200px;
 }
 
@@ -32,10 +32,12 @@ color: #E5E7EB;
 text-decoration: none;
 }
 
+/*first container end */
+
 .awesome {
 display: flex;
 gap: 32px;
-padding-top: 50px;
+padding: 50px 200px;
 background-color: #1F2937;
 justify-content: space-between;
 }
@@ -52,33 +54,25 @@ color: #F9FAF8;
 }
 
 
-img {
-    
+.image img {
 width: 500px;
 height: auto;
 }
 
-button {
+.button {
 display: flex;
 width: 100px;
 padding: 8px 25px;
 text-align: center;
 margin-top: 16px;
 border-radius: 10px;
-background-color: #3882F6;
+background-color: #ffbb00;
 font-weight: bold;
 color: #F9FAF8;
 border: none;
 }
 
-.albums {
-display: flex;
-flex-flow: column nowrap;
-}
-
-.albums .item {
-display: flex;
-}
+/*second container end */
 
 .info {
 display:flex;
@@ -86,7 +80,105 @@ font-size: 36px;
 font-weight: bolder;
 justify-content: center;
 margin: 32px;
+color: #1F2937;
 }
-{
-    border: 4px solid brown;
+
+/*third container end */
+
+.albums {
+display: flex;
+justify-content: space-around;
+margin-bottom: 32px;
+}
+
+.albums .item {
+display: flex;
+flex-flow: wrap;
+flex: 0 0 200px;
+justify-content: center;
+gap: 16px;
+}
+
+.albums .item img {
+width: 200px;
+border: 4px solid #3882F6;
+border-radius: 10px;
+}
+
+.albums .item .text {
+text-align: center;
+}
+
+/*fourth container end */
+
+.quotebox {
+display: flex;
+flex-flow: column;
+background-color: #E5E7EB;
+align-items: center;
+justify-content: center;
+}
+
+.quotebox .item {
+display: flex;
+flex-flow: column;
+align-items: center;
+justify-content: center;
+padding: 50px 0px;
+}
+
+.quote {
+font-size: 36px;
+font-weight: 300;
+color: #1F2937;
+text-align: center;
+}
+
+.kevin {
+align-self: flex-end;
+font-size: 36px;
+font-weight: bolder;
+margin: 32px;
+color: #1F2937;
+}
+
+/*fifth container end */
+
+.calltoactionbox {
+display: flex;
+padding: 64px 0px;
+justify-content: center;
+align-items: center;
+}
+
+.calltoaction {
+display: flex;
+padding: 32px 128px;
+border-radius: 16px;
+background-color: #3882F6;
+justify-content: center;
+align-items: center;
+}
+
+.calltoaction .text {
+flex-flow: column;
+}
+
+.listento {
+font-size: 24px;
+font-weight: bold;
+padding: 0px;
+color:#F9FAF8;
+}
+
+.listenby {
+font-size: 18px;
+font-weight: 500;
+color: #E5E7EB;
+}
+
+.calltoaction .button {
+margin-left: 64px;
+margin-top: 0;
+border: #F9FAF8 4px solid;
 }
