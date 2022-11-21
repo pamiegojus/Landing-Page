@@ -34,6 +34,7 @@ text-decoration: none;
 
 .awesome {
 display: flex;
+gap: 32px;
 padding-top: 50px;
 background-color: #1F2937;
 justify-content: space-between;
@@ -53,11 +54,12 @@ color: #F9FAF8;
 
 img {
     
-width: 600px;
+width: 500px;
 height: auto;
 }
 
 button {
+display: flex;
 width: 100px;
 padding: 8px 25px;
 text-align: center;
@@ -69,6 +71,22 @@ color: #F9FAF8;
 border: none;
 }
 
+.albums {
+display: flex;
+flex-flow: column nowrap;
+}
+
+.albums .item {
+display: flex;
+}
+
+.info {
+display:flex;
+font-size: 36px;
+font-weight: bolder;
+justify-content: center;
+margin: 32px;
+}
 {
     border: 4px solid brown;
 }
